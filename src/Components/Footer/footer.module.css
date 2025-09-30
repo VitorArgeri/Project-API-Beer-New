@@ -1,22 +1,25 @@
 .container {
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.footer {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
-    height: 5vh;
-    background: linear-gradient(90deg, var(--yellow-600) 0%, var(--yellow-800) 100%);
-    margin-top: 10vh;
-    gap: 2rem;
+    justify-content: space-around;
+    height: 10vh;
+    background: linear-gradient(90deg, var(--blue-900) 0%, rgb(72, 33, 146) 100%);
 }
 
 .logo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: black;
+    color: white
 }
 
 .text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(255, 239, 239);
     font-weight: 700;
 }
@@ -36,8 +39,38 @@
     animation-play-state: paused;
 }
 
+.line {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(176, 142, 255) 0%, var(--blue-400) 50%, #ae62ec 100%);
+    background-size: 200% 100%;
+    animation: colorShift 3s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 @keyframes colorPulse {
-    0% { color: rgb(83, 44, 221); }
-    50% { color: rgb(123, 123, 247); }
-    100% { color: rgb(83, 44, 221); }
+    0% {
+        color: rgb(192, 176, 250);
+    }
+
+    50% {
+        color: rgb(96, 96, 247);
+    }
+
+    100% {
+        color: rgb(192, 176, 250);
+    }
 }

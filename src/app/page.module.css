@@ -1,0 +1,126 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.highlight {
+    color: var(--blue-900);
+}
+
+.perfil {
+    margin-top: 7.5vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 3px solid var(--blue-1000);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.ImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 3px solid var(--blue-800);
+    object-fit: cover;
+}
+
+.division {
+    height: 60vh;
+    margin-left: 2vw;
+    width: 3px;
+    background-color: var(--blue-1000);
+}
+
+.textContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    bottom: 6vh;
+}
+
+.perfilBlock {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.perfilName {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.perfilItem {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--blue-900);
+}
+
+.perfilCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 10vw;
+    text-align: center;
+    border: 2px solid var(--blue-1000);
+    height: 12.5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    background-image: url('/Images/Background-Card.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card>* {
+    position: relative;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
