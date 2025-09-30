@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 5vh;
+    background: linear-gradient(90deg, var(--yellow-600) 0%, var(--yellow-800) 100%);
+    margin-top: 10vh;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.text {
+    font-size: 1rem;
+    color: rgb(255, 239, 239);
+    font-weight: 700;
+}
+
+.name {
+    color: rgb(83, 44, 221);
+    animation: colorPulse 3s infinite;
+    background: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: rgb(123, 123, 247);
+    text-decoration: underline;
+    animation-play-state: paused;
+}
+
+@keyframes colorPulse {
+    0% { color: rgb(83, 44, 221); }
+    50% { color: rgb(123, 123, 247); }
+    100% { color: rgb(83, 44, 221); }
+}

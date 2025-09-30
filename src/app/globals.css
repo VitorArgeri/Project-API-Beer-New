@@ -11,6 +11,17 @@
     --yellow-900: #f57f17;
 }
 
+@font-face {
+    font-family: 'Marcellus';
+    src: url('/Fonts/Marcellus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Marcellus', serif;
+}
+
 * {
     margin: 0;
     padding: 0;
