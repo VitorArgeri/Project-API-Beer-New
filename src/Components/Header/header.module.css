@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    background: linear-gradient(90deg, var(--yellow-600) 0%, var(--yellow-800) 100%);
+}
+
+.logo {
+    font-size: 1.75rem;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navItem {
+    transition: ease-in-out 0.3s;
+}
+
+.navLink {
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+    color: white;
+    font-size: 1.3rem
+}
+
+.navItem:hover {
+    transform: translateY(-2px);
+}
+
+.navLink:hover {
+    color: black;
+}
