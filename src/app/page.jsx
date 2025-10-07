@@ -26,7 +26,6 @@ export default function page() {
                         </div>
                         <div className={styles.perfilBlock}>
                             <p className={styles.perfilName}>Qualificações</p>
-                            {/* Mudar Depois */}
                             <div className={styles.perfilCards}>
                                 <div className={styles.card}>
                                     <p className={styles.cardTitle}>🌍 Inglês Fluente</p>

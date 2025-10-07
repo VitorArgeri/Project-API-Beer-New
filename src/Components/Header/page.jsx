@@ -9,10 +9,10 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <ul className={styles.navList}>
                         <li className={styles.navItem}><a href="/" className={styles.navLink}>Home</a></li>
-                        <li className={styles.navItem}><a href="/list" className={styles.navLink}>Listagem</a></li>
+                        <li className={styles.navItem}><a href="/Lista" className={styles.navLink}>Listagem</a></li>
                         <li className={styles.navItem}><a href="/create" className={styles.navLink}>Criação</a></li>
                         <li className={styles.navItem}><a href="/details" className={styles.navLink}>Detalhes</a></li>
-                        <li className={styles.navItem}><a href="/about" className={styles.navLink}>Sobre a API</a></li>
+                        <li className={styles.navItem}><a href="/Sobre" className={styles.navLink}>Sobre a Projeto</a></li>
                     </ul>
                 </nav>
             </div>

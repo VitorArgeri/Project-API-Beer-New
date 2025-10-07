@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid var(--blue-800);
+    margin: 1.5rem;
+    height: 20vh;
+    transition: 0.3s ease;
+}
+
+.topicTitle {
+    font-size: 1.5rem;
+    color: var(--blue-900);
+    border-bottom: 2px solid var(--blue-800);
+    text-align: start;
+}
+
+.topicText {
+    font-size: 1.2rem;
+    color: var(--blue-700);
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.container:hover {
+    background-color: var(--blue-100);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
