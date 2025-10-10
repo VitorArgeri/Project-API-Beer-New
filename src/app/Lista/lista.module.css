@@ -52,7 +52,7 @@
     gap: 1.5rem;
     margin-top: 2rem;
     width: 70%;
-    background: linear-gradient(135deg, var(--blue-800), var(--blue-900));
+    background: linear-gradient(90deg, var(--blue-900) 0%, rgb(68, 75, 216) 100%);
     padding: 2rem;
     border-radius: 30px;
     border: 2px solid black;
